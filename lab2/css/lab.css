@@ -11,5 +11,6 @@ p {
 
 #content {
   background-color: #234F95;
-
+  width: 500px;
+  min-height:500px;
 }
