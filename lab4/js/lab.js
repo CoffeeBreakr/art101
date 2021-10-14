@@ -1,7 +1,7 @@
 /**
  * Summary. Lab 4 - Pseudo Code.
  *
- * Description. (use period)
+ * Description. Comments for creating a pseudo code for a dino run game.
  *
  * @link   URL
  * @file   This files defines the MyClass class.
