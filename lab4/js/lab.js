@@ -1,12 +1,12 @@
 /**
- * Summary. Lab 4 - Pseudo Code.
+ * Lab 4 - Pseudo Code.
  *
- * Description. Comments for creating a pseudo code for a dino run game.
+ * Comments for creating a pseudo code for a dino run game.
  *
  * @link   URL
- * @file   This files defines the MyClass class.
+ * @file   This files contains pseudo code comments for a game.
  * @author Jesse Park & Evan Kramer
- * @since  x.x.x
+ * @since  10/14/21
  */
 
  // Creating a Dino Run game:
