@@ -26,10 +26,14 @@ myArray.map(function(x){
 })
 
 //Output
-document.writeln("Multiplying the given int with the DoStuff function:") 
+document.writeln("Multiplying the given int with the DoStuff function:")
+console.log(myArray.map(DoStuff));
 document.writeln(myArray.map(DoStuff));
+console.log(DoStuff(3));
 document.writeln(DoStuff(3));
 
 document.writeln("checking the given int with the isOdd function:")
 document.writeln(isOdd(2));
+console.log(isOdd(2));
 document.writeln(myArray.map(isOdd));
+console.log(myArray.map(isOdd));
