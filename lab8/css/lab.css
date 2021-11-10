@@ -1,0 +1,51 @@
+body {
+  background-color: #D9DBBC
+}
+
+h1{
+  font-family: sans-serif;
+  padding: 8px;
+  margin: 25px;
+  color:#FFFFFF
+}
+
+h2 {
+  font-family: sans-serif;
+  padding: 8px;
+  margin: 25px;
+  color:#FFFFFF
+}
+
+hr {
+  border: 1px dashed #000;
+  background-color:#D9DBBC
+
+}
+
+p {
+  font-family: sans-serif;
+  font-size: 20px;
+  padding: 8px;
+  margin: 25px;
+  color:#FCDDBC
+}
+
+p2 {
+  font-family: sans-serif;
+  color:#FCDDBC
+}
+
+#script {
+  font-family: serif;
+  font-size: 20px;
+  padding: 8px;
+  margin: 25px;
+  display: block;
+  color:#FCDDBC;
+}
+
+#content {
+  background-color: #69585F;
+  width: 1900px;
+  min-height:500px;
+}
