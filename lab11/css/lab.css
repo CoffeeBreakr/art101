@@ -48,3 +48,14 @@ p2 {
   width: 1900px;
   min-height:500px;
 }
+
+.problems {
+  color: red;
+}
+.challenges {
+  color: green;
+}
+.results {
+  color: red;
+}
+\

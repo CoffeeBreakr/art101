@@ -1,15 +1,14 @@
 /**
  * Author:    Jesse Park & Evan Kramer
- * Created:   10/26/21
+ * Created:   11/11/21
  *
  **/
 
-// Defining Variables
-function DoStuff(x){
-   var results = x * 3
-   return results;
-}
+// Javascript for Web
 
- //output
-document.writeln("Here is your new name: ", sortUserName(), "</br>");
-console.log(DoStuff(3));
+oldEl = document.getElementById('kapow');
+newEl = document.createElement("div");
+oldEl.appendChild(newElement);
+newEl.id = "kaboom";
+newEl.innerHTML = "KABOOOM!";
+newEl.style.fontSize = "30pt";
