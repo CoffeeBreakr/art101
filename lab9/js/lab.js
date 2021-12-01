@@ -8,7 +8,7 @@
 
 oldEl = document.getElementById('kapow');
 newEl = document.createElement("div");
-oldEl.appendChild(newElement);
+oldEl.appendChild();
 newEl.id = "kaboom";
 newEl.innerHTML = "KABOOOM!";
 newEl.style.fontSize = "30pt";
