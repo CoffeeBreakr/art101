@@ -37,8 +37,16 @@ p {
   margin-left: 30px;
 }
 
+#results {
+  background-color: #69585F;
+  margin-right: 30px;
+  margin-left: 30px;
+}
 #output {
   background-color: #69585F;
   margin-right: 30px;
   margin-left: 30px;
+  font-family: sans-serif;
+  font-size: 25px;
+  color:#FFFFFF
 }
