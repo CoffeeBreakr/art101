@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Lab 8 - Anon Functions and Callbacks</title>
+	<title>Lab 10 - JavaScript Events and Forms</title>
 	<link rel="stylesheet" type="text/css" href="../css/site.css">
 	<link rel="stylesheet" type="text/css" href="css/lab.css">
 	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
@@ -9,19 +9,27 @@
 </head>
 <body>
 	<div id='content'>
-    <h1 class="w3-center w3-animate-right"> Lab 7 - Functions </h1>
+    <h1 class="w3-center w3-animate-right"> Lab 10 - JavaScript Events and Forms </h1>
 		<hr>
 		<h2 class="w3-center w3-animate-right">Challenges</h2>
-		 <p class="w3-center w3-animate-left">Work with a partner, write functions that take user input.</p>
+		 <p class="w3-center w3-animate-left">Work with a partner, make a js that takes input and sorts it and outputs back</p>
 
   	<h2 class="w3-center w3-animate-right">Problems</h2>
-		 <p class="w3-center w3-animate-left">>Issues arose with naming conventions in the function, however, this issue was quickly remdied by renaming the different variables better.</p>
+		 <p class="w3-center w3-animate-left"> There was a minor problem where the sort function did not work at all. This was because the sort function itself
+		  was not actually closed (missing a "}"). There was also a problem where the button itself would be called before we would click it. This was fixed
+			by since the button's parameter directly called the function itself instead of doing a callback.</p>
 
 		<h2 class="w3-center w3-animate-right">Results</h2>
-		 <p class="w3-center w3-animate-left">>As shown below, after typing in an input, a function sorts each character inside the input based on capitalization and alphabetical order.</p>
+		 <p class="w3-center w3-animate-left">As shown below in below with the button</p>
 
-	  <h2 class="w3-center w3-animate-right">Script Output</h2>
+		 		<button class="w3-center w3-animate-left" id="btn">Enter your name by clicking here!</button>
+
+		<h2 class="w3-center w3-animate-right">Script Output</h2>
 		<div class="w3-center w3-animate-left" id="script">
+			<div id= 'output'>
+			 <p id = "outputResult"> Results </p>
+		 </div>
+			<a href="js/lab.js"> javascript file </a>
 	  	<script src="js/lab.js"></script>
 		</div>
   </div>
