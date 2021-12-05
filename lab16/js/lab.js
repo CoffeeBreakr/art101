@@ -1,7 +1,7 @@
 /**
  * Author:    Jesse Park & Evan Kramer
  * Created:   12/5/21
- *
+ * Comics:    Provided by https://xkcd.com/
  **/
 
  //generates a random number based on the starting point
