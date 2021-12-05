@@ -1,15 +1,47 @@
 /**
  * Author:    Jesse Park & Evan Kramer
- * Created:   10/26/21
+ * Created:   12/5/21
  *
  **/
 
-// Defining Variables
-function DoStuff(x){
-   var results = x * 3
-   return results;
-}
+ //generates a random number based on the starting point
+var number = Math.floor(Math.random() * 2547) + 1;
+console.log(number);
+//creates URL with number
+var myURL = "https://xkcd.com/" + number + "/info.0.json";
 
- //output
-document.writeln("Here is your new name: ", sortUserName(), "</br>");
-console.log(DoStuff(3));
+ $("#activate").click(callAJAX);
+
+ function callAJAX() {
+   console.log("button has been pressed!");
+   console.log(myURL);
+   // Using the core $.ajax() method
+    $.ajax({
+        // API endpoint
+        url: myURL,
+        // Any data to send
+        //data: {id:123},
+        // POST or GET request
+        type: "GET",
+        // data type we expect back
+        dataType : "json",
+    })
+
+    // If the request succeeds
+    // data is passed back
+    .done(function(comicObj) {
+        console.log("Success:", comicObj.title, comicObj.img, comicObj.alt, comicObj.num);
+        var imgTitle = comicObj.title;
+        $("#title").html(imgTitle);
+        var imgTag = "<img src=" + comicObj.img + ">";
+        $("#img").html(imgTag);
+        var imgAlt = comicObj.alt;
+        $("#alt").html(imgAlt);
+
+    })
+    // If the request fails
+    .fail(function(request,error) {
+        console.log(request,error);
+        $("#output").html("Error")
+    });
+   }
