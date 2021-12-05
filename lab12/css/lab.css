@@ -43,6 +43,8 @@ p2 {
   color:#FCDDBC;
 }
 
+
+
 #content {
   background-color: #69585F;
   width: 1900px;
@@ -58,4 +60,12 @@ p2 {
 .results {
   color: red;
 }
-\
+
+.input {
+  border: 3px solid white;
+  font-family: sans-serif;
+  margin: 50px;
+  padding: 8px;
+  font-size: 20px;
+  color: white;
+}
