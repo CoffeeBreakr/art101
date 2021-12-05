@@ -1,15 +1,35 @@
 /**
  * Author:    Jesse Park & Evan Kramer
- * Created:   10/26/21
+ * Created:   12/5/21
  *
  **/
 
-// Defining Variables
-function DoStuff(x){
-   var results = x * 3
-   return results;
-}
+var oldEl = document.getElementById('output');
 
- //output
-document.writeln("Here is your new name: ", sortUserName(), "</br>");
-console.log(DoStuff(3));
+function callAJAX() {
+  // Using the core $.ajax() method
+   $.ajax({
+       // API endpoint
+       url: "https://numbers.api",
+       // Any data to send
+       data: { id: 123},
+       // POST or GET request
+       type: "GET",
+       // data type we expect back
+       dataType : "json",
+   })
+
+   // If the request succeeds
+   // data is passed back
+   .done(function(data) {
+       console.log("Success:", data);
+   })
+   // If the request fails
+   .fail(function(request,error) {
+       console.log(request, error);
+   });
+  }
+
+document.getElementById("activate").addEventListener("click", function() {
+callAJAX();
+});

@@ -4,15 +4,13 @@ body {
 
 h1{
   font-family: sans-serif;
-  padding: 8px;
-  margin: 25px;
+  font-size: 30px;
   color:#FFFFFF
 }
 
 h2 {
   font-family: sans-serif;
-  padding: 8px;
-  margin: 25px;
+  font-size: 25px;
   color:#FFFFFF
 }
 
@@ -25,37 +23,22 @@ hr {
 p {
   font-family: sans-serif;
   font-size: 20px;
-  padding: 8px;
-  margin: 25px;
   color:#FCDDBC
 }
 
-p2 {
-  font-family: sans-serif;
-  color:#FCDDBC
+#header {
+  background-color: #69585F;
+  margin-right: 30px;
+  margin-left: 30px;
 }
-
-#script {
-  font-family: serif;
-  font-size: 20px;
-  padding: 8px;
-  margin: 25px;
-  color:#FCDDBC;
-}
-
 #content {
   background-color: #69585F;
-  width: 1900px;
-  min-height:500px;
+  margin-right: 30px;
+  margin-left: 30px;
 }
 
-.problems {
-  color: red;
+#output {
+  background-color: #69585F;
+  margin-right: 30px;
+  margin-left: 30px;
 }
-.challenges {
-  color: green;
-}
-.results {
-  color: red;
-}
-\

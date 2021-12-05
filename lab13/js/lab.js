@@ -5,8 +5,6 @@
  **/
  var oldEl = document.getElementById('output');
 
-
-
 function FizzBuzzBoom(){
 
   var outputStr = "";
@@ -28,23 +26,15 @@ function FizzBuzzBoom(){
         outputStr += "Boom!";
       }
 
-
 if(outputStr != ""){
       $("#output").append("<p>" + num + " - " + outputStr + "</p>");
 }
-
-
   }
-
   return outputStr;
 }
-
 document.getElementById("btn").addEventListener("click", function() {
-
 FizzBuzzBoom();
-
 });
-
 
 function reportError(str) {
   outputEl.innerHTML = "<div> class = 'error'" + str + "</div>"
