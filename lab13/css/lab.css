@@ -49,13 +49,8 @@ p2 {
   min-height:500px;
 }
 
-.problems {
-  color: red;
+.output {
+  font-family: sans-serif;
+  font-size: 10;
+  color: yellow;
 }
-.challenges {
-  color: green;
-}
-.results {
-  color: red;
-}
-\
