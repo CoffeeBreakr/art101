@@ -50,3 +50,13 @@ p {
   font-size: 25px;
   color:#FFFFFF
 }
+
+#title {
+  font-family: sans-serif;
+  font-size: 30px;
+  color:#FFFFFF
+}
+
+#img {
+  border: thick dashed white;
+}

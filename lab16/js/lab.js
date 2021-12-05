@@ -9,6 +9,7 @@ var number = Math.floor(Math.random() * 2547) + 1;
 console.log(number);
 //creates URL with number
 var myURL = "https://xkcd.com/" + number + "/info.0.json";
+console.log(myURL);
 
  $("#activate").click(callAJAX);
 
@@ -29,16 +30,16 @@ var myURL = "https://xkcd.com/" + number + "/info.0.json";
 
     // If the request succeeds
     // data is passed back
-    .done(function(comicObj) {
-        console.log("Success:", comicObj.title, comicObj.img, comicObj.alt, comicObj.num);
-        var imgTitle = comicObj.title;
-        $("#title").html(imgTitle);
-        var imgTag = "<img src=" + comicObj.img + ">";
-        $("#img").html(imgTag);
-        var imgAlt = comicObj.alt;
-        $("#alt").html(imgAlt);
-
-    })
+    .done(function(comicObj){
+        console.log("Success: ", comicObj.title, comicObj.img, comicObj.alt, comicObj.num);
+        //output the comic title, image, and alt
+        var title = comicObj.title + " # " + comicObj.num;
+        $("#title").html(title);
+        var img = "<img src=" + comicObj.img + ">";
+        $("#img").html(img);
+        var desc = comicObj.alt;
+        $("#alt").html(desc);
+      })
     // If the request fails
     .fail(function(request,error) {
         console.log(request,error);
