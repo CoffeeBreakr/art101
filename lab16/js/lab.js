@@ -11,6 +11,7 @@ console.log(number);
 var myURL = "https://xkcd.com/" + number + "/info.0.json";
 console.log(myURL);
 
+//when button is clicked call AJAX function
  $("#activate").click(callAJAX);
 
  function callAJAX() {
@@ -32,7 +33,7 @@ console.log(myURL);
     // data is passed back
     .done(function(comicObj){
         console.log("Success: ", comicObj.title, comicObj.img, comicObj.alt, comicObj.num);
-        //output the comic title, image, and alt
+        //output the comic title, image, description, and number
         var title = comicObj.title + " # " + comicObj.num;
         $("#title").html(title);
         var img = "<img src=" + comicObj.img + ">";
