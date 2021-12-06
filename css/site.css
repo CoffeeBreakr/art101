@@ -1,55 +1,71 @@
 body {
-  background-color: #283C4F
+  background-color: #283C4F;
 }
 
 h1{
   font-family: sans-serif;
   font-size: 35px;
-  color:#FFFFFF
+  color:#FFFFFF;
 }
 
 h2 {
   font-family: sans-serif;
   font-size: 30px;
-  color:#FFFFFF
+  color:#FFFFFF;
 }
 
 h2 {
   font-family: sans-serif;
   font-size: 25px;
-  color:#FFFFFF
+  color:#FFFFFF;
 }
 
 hr {
   border: 1px dashed #000;
-  background-color:#D9DBBC
+  background-color:#D9DBBC;
 
 }
 
 p {
   font-family: sans-serif;
   font-size: 20px;
-  color:#FFFFFF
+  color:#FFFFFF;
 }
 
 li {
   font-family: sans-serif;
   font-size: 20px;
-  color:#FFFFFF
+  color:#FFFFFF;
 }
 #header {
   background-color: #1F2538;
+  border: thick dashed #4B515C;
+  margin-top : 30px;
   margin-right: 30px;
   margin-left: 30px;
+  margin-bottom: 30px;
+}
+#title{
+  margin-left: 20px;
+  font-weight: bold;
+}
+#bodyText{
+  margin-left: 20px;
 }
 #content {
   background-color: #1F2538;
+  border: thick dashed #4B515C;
+  margin-top : 30px;
   margin-right: 30px;
   margin-left: 30px;
+  margin-bottom: 30px;
 }
 
 #labs {
   background-color: #1F2538;
+  border: thick dashed #4B515C;
+  margin-top : 30px;
   margin-right: 30px;
   margin-left: 30px;
+  margin-bottom: 30px;
 }
